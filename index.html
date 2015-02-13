@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+ <title>SVG Logo scale</title>
+<script type="text/javascript"> 
+function getoj(id) { 
+return document.getElementById(id); 
+} 
+</script>
+<style type="text/css">
+img {outline: 1px solid #ccc; padding: 4px;}
+#slider {width: 512px;}
+form {position: relative;}
+#imageblock {position: absolute; top: 40px;}
+#image2block {position: absolute; top: 40px; left: 600px;}
+span {display: block; font-family: Helvetica, Arial; font-size: 0.8em;}
+</style>
+</head>
+<body>
+	<form oninput="getoj('image').setAttribute('height',value=slider.value);result.value=slider.value">
+		<input id="slider" type="range" mix="1" max="512" value="512"> </input>
+		  <code>&lt;img src="wip.svg" height="<output name="result"  value="">512</output>"&gt;</code>
+	<br/>
+	<div id="imageblock">
+		<img id="image" src="wip.svg" height="245" alt="SVG logo with media queries"><span>SVG logo <strong>with</strong> media queries</span>
+	</div>
+	</form>
+</body>
+</html>
