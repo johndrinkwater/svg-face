@@ -14,16 +14,27 @@ img {padding: 4px;}
 form {position: relative;}
 #imageblock {position: absolute; top: 40px;}
 #image2block {position: absolute; top: 40px; left: 600px;}
+#imageblock-example { position: absolute; top: 256px; white-space-collapse:discard;font-size:0}
+#imageblock-example img { padding:0; vertical-align: baseline; border-bottom: solid 1px black; }
 span {display: block; font-family: Helvetica, Arial; font-size: 0.8em;}
 </style>
 </head>
 <body>
 	<form oninput="getoj('image').setAttribute('height',value=slider.value);result.value=slider.value">
-		<input id="slider" type="range" mix="1" max="512" value="245"> </input>
-		  <code>&lt;img src="wip.svg" height="<output name="result" value="245">512</output>"&gt;</code>
+		<input id="slider" type="range" mix="1" max="512" step="8" value="248"> </input>
+		<code>&lt;img height="<output name="result" value="248">512</output>"&gt;</code>
 	<br/>
 	<div id="imageblock">
-		<img id="image" src="wip-fixed-up.svg" height="245" alt="SVG logo with media queries">
+		<img id="image" src="wip.svg" height="248" alt="SVG logo with media queries">
+	</div>
+	<div id="imageblock-example">
+		<img id="image" src="wip.svg?24" height="24" alt="small">
+		<img id="image" src="wip.svg?40" height="40" alt="comment">
+		<img id="image" src="wip.svg?48" height="48" alt="medium">
+		<img id="image" src="wip.svg?72" height="72" alt="regular">
+		<img id="image" src="wip.svg?96" height="96" alt="large">
+		<img id="image" src="wip.svg?128" height="128" alt="larger">
+		<img id="image" src="wip.svg?208" height="208" alt="retina">
 	</div>
 	</form>
 </body>
