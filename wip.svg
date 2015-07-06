@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="68.5" height="64">
 <defs><style type="text/css">
-svg{background:lightgrey;} @media print { #avatar { opacity: 0} }
+@media print { #avatar { opacity: 0} }
 @media screen { #qrcode { opacity: 0} }
-@media screen and (max-height:236px) { #avatar{opacity:1} #qrcode{opacity:0 !important}}
-@media screen and (min-height:256px) { #avatar{opacity:0} #qrcode{opacity:1}}
-@media screen and (min-height: 65px) { #avatar-background{opacity:0}}
-@media screen and (max-height: 31px) { #hideatzooms{opacity:0}}
+@media screen and (max-height:236px) {#avatar{opacity:1} #qrcode{opacity:0 !important}}
+@media screen and (min-height: 65px) {*{shape-rendering:auto;}}
+@media screen and (min-height:256px) {#avatar{opacity:0} #qrcode{opacity:1}*{shape-rendering:crispEdges;}}
+@media screen and (min-height: 96px) {#avatar-background{opacity:0}}
+@media screen and (max-height: 95px) {*{shape-rendering: geometricPrecision;}}
+@media screen and (max-height: 48px) {#hideatzooms{opacity:0}}
+@media screen and (max-height: 32px) {#avatar-background{opacity:0}}
 </style></defs>
 <g transform="translate(-0.2,0)"><g transform="translate(20.7,8)" id="avatar">
 <path d="M 0,48 0,0 48,0 48,48 z" id="avatar-background" fill="#8398b4"/><path d="M 10,41 8,39 8,33 6,31 5,31 4,30 3,28 2,24 2,22 4,20 6,16 8,8l20,0 2,3 1,2 0,5 2,7 1,2 0,1 -1,1 -1,2 -2,1 -1,3 -2,4 -2,2 z" id="avatar-face-skin" fill="#ecc0a5"/><path d="m26,25 0,-1 -1,0 0,1zm-13,-1 1,0 0,-1 -1,0 z" id="avatar-face-eyes" fill="#4899cd"/><path d="m28,25 0,-1 -4,0 0,-1 5,0 0,2zm-18,-1 0,-2 6,0 0,1 -4,0 0,1 z" id="avatar-face-eye-shade" fill="#6a3718"/><path d="m13,42 0,-5 1,0 0,-3 11,0 0,8 -1,2 -2,1 -6,0 0,-1 -2,0 z" id="avatar-face-goatee" fill="#c88e69"/><path d="M 7,7 7.5,14 5,14 5,8.5 6,7 9,4l4,-4 3,0 0,4 2,0 1,1 8,0 3,1 2,3 1,1.5 0,7.5 -1,0 0,-8 -3,0 -1,-1 0,-2 z" id="avatar-face-caatinga" fill="#6d482b"/>
