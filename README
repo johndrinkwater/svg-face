@@ -1,3 +1,18 @@
+Just playing about with SVG and media queries. This has been sat on my harddisk
+since the start of the year (and my head since 2010) waiting for bugs to be
+resolved in browsers, they are getting close, and we poked them along a bit
+with http://johndrinkwater.github.io/svg-media-queries/ so putting this live.
+
+This is the Avatar/.face I have used for the last decade+ in PNG form, that I
+decided to make a bit more dynamic in SVG. It should change appearance
+depending on requested size.
+
+Nothing is especially new, and the code is kinda obvious, so any blogging will
+wait til I actually start doing that again :P
+
+This, like the rest of my non-code, is licensed CC BY-SA. Though I cannot
+expect you will want to replicate my face entirely, do learn something from it,
+eh?
 
 skin, fcce9c edc1a6
 eyes, 499aceff 349accff

@@ -1,31 +1,35 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
- <title>SVG Logo scale</title>
-<script type="text/javascript">
-function getoj(id) {
-return document.getElementById(id);
-}
-</script>
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8"><title>SVG Logo scale</title>
+<style>
+body { background: #CFDDE9; color: #000; text-shadow: 2px 2px 4px rgba(2, 35, 7, 0.4) }
+a { line-height: 1px; display: inline-block; border-radius: 50% }
+#example { min-height:12px }
+ul { list-style: none }
+li { display: inline-block }
+figcaption { text-align: center }
+code { background: rgba(1,1,1,0.05); padding: 4px 8px;color: inherit }
+dt { width: 8em; float: left }
+dl > dd { margin-left: 8em }
+form { height: 532px }
+</style>
 <style type="text/css">
-img {padding: 4px;}
 #slider {width: 512px;}
 form {position: relative;}
 #imageblock {position: absolute; top: 40px;}
-#image2block {position: absolute; top: 40px; left: 600px;}
+#imageblock img {padding: 4px;}
 #imageblock-example { position: absolute; top: 256px; white-space-collapse:discard;font-size:0}
 #imageblock-example img { padding:0; vertical-align: baseline; border-bottom: solid 1px black; }
 span {display: block; font-family: Helvetica, Arial; font-size: 0.8em;}
 </style>
 </head>
 <body>
-	<form oninput="getoj('image').setAttribute('height',value=slider.value);result.value=slider.value">
-		<input id="slider" type="range" mix="1" max="512" step="8" value="248"> </input>
-		<code>&lt;img height="<output name="result" value="248">512</output>"&gt;</code>
+	<h1>SVG ~/.face</h1>
+	<form oninput="document.getElementById('image').setAttribute('height',value=slider.value);result.value=slider.value">
+		<input id="slider" type="range" mix="1" max="512" step="8" value="192" />
+		<code>&lt;img height="<output name="result" value="192">192</output>"&gt;</code>
 	<br/>
 	<div id="imageblock">
-		<img id="image" src="wip.svg" height="248" alt="SVG logo with media queries">
+		<img id="image" src="wip.svg" height="192" alt="SVG logo with media queries">
 	</div>
 	<div id="imageblock-example">
 		<img id="image" src="wip.svg?24" height="24" alt="small">
@@ -37,5 +41,6 @@ span {display: block; font-family: Helvetica, Arial; font-size: 0.8em;}
 		<img id="image" src="wip.svg?208" height="208" alt="retina">
 	</div>
 	</form>
+	<p>~ johndrinkwater <time datetime="2015-07-06">2015-07-06</time></p>
 </body>
 </html>
